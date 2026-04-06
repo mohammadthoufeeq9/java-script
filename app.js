@@ -17,9 +17,24 @@ console.log(year)
 // }else{
 //     console.log("not a good string")
 // }
- let num=12;
- if(num%3==0 &&(num+1==12 || num--==11)){
-    console.log("safe")
- }else{
-    console.log("unsafe")
- }
+//  let num=12;
+//  if(num%3==0 &&(num+1==12 || num--==11)){
+//     console.log("safe")
+//  }else{
+//     console.log("unsafe")
+//  }
+//switch
+// let color="red";
+// switch(color) {
+//     case "red":
+//         console.log("stop");
+//         break;
+//     case "green":
+//         console.log("Go");
+//         break;
+//     case "Yellow":
+//         console.log("ready to go");
+//         break;
+//     case "default":
+//         console.log("The light is broken")
+// }

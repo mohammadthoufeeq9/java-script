@@ -84,3 +84,9 @@ if (a > b && a > c) {
 } else {
     console.log("c is the largest");
 }
+//Actions that can performed on object
+let name="Ninja";
+str.abc()//stringmethod
+//trim()
+let s="  jndusnx  "
+s.trim()

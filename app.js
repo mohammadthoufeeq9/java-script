@@ -38,3 +38,30 @@ console.log(year)
 //     case "default":
 //         console.log("The light is broken")
 // }
+let day=5;
+switch(day){
+    case 1:
+        console.log("Monday");
+        break;
+    case 2:
+        console.log("Tuesday");
+        break;
+    case  3:
+        console.log("Wednesday");
+        break;
+    case 4:
+        console.log("Thursday");
+        break;
+    case 5:
+        console.log("Friday");
+        break;
+    case 6:
+        console.log("Saturday");
+        break;
+    case 7:
+        console.log("sunday");
+        break;
+    case "default":
+        console.log("Give the proper day");
+        break;
+}

@@ -38,7 +38,7 @@ console.log(year)
 //     case "default":
 //         console.log("The light is broken")
 // }
-let day=5;
+let day=22;
 switch(day){
     case 1:
         console.log("Monday");
@@ -61,15 +61,26 @@ switch(day){
     case 7:
         console.log("sunday");
         break;
-    case "default":
+    default:
         console.log("Give the proper day");
         break;
 }
 
 console.error("wrong Password!")
 console.warn("Enter correct password")
-prompt("enter name")
+// prompt("enter name")
 
-let f_name= prompt("Enter your first name");
-let l_name= prompt("Enter your last name");
-console.log(f_name,"",l_name);
+// let f_name= prompt("Enter your first name");
+// let l_name= prompt("Enter your last name");
+// console.log(f_name,"",l_name);
+let a = 2;
+let b = 6;
+let c = 10;
+
+if (a > b && a > c) {
+    console.log("a is the largest");
+} else if (b > a && b > c) {
+    console.log("b is the largest");
+} else {
+    console.log("c is the largest");
+}

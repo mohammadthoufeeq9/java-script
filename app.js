@@ -65,3 +65,11 @@ switch(day){
         console.log("Give the proper day");
         break;
 }
+
+console.error("wrong Password!")
+console.warn("Enter correct password")
+prompt("enter name")
+
+let f_name= prompt("Enter your first name");
+let l_name= prompt("Enter your last name");
+console.log(f_name,"",l_name);

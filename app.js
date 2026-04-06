@@ -104,3 +104,8 @@ console.log(blocked)
 console.log(follower)
 let follower_added=follower.unshift("ninja")
 console.log(follower);
+console.log(follower.indexOf('baani'))
+console.log(follower.includes("audi"))
+console.log(follower.concat(array))
+console.log(follower.reverse())
+//qs

@@ -85,8 +85,22 @@ if (a > b && a > c) {
     console.log("c is the largest");
 }
 //Actions that can performed on object
-let name="Ninja";
-str.abc()//stringmethod
+// let str="Ninja";
+// console.log(str.abc())//stringmethod
 //trim()
-let s="  jndusnx  "
-s.trim()
+let s = "  jndusnx  ";
+s = s.trim();
+s = s.toUpperCase(); 
+console.log(s);     
+//Arrays
+let array=[2,4,1,4,7,9]
+array.push(100);
+array.shift();
+array.unshift("num")
+console.log(array)
+let follower=['aani','baani','caani','daani']
+let blocked=follower.shift();
+console.log(blocked)
+console.log(follower)
+let follower_added=follower.unshift("ninja")
+console.log(follower);

@@ -127,3 +127,9 @@ let n = Number(prompt("Enter a number"));
 for (let i = n; i <= n * 10; i += n) {
     console.log(i);
 }
+//nested loops
+for(let i=1; i<=3;i++){
+    for(let j=1; j<=3; j++){
+        console.log(j)
+    }
+}

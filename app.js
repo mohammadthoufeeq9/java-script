@@ -113,3 +113,17 @@ console.log(follower.reverse())
 for (let i = 1; i <= 15; i += 2) {
     console.log(i)
 }
+//print even numbers 2to10
+for (let i=2;i<=10;i+=2){
+    console.log(i)
+}
+for (let i=2;i<=10;i++){
+    if(i%2===0){
+        console.log(i);
+    }
+}
+//table
+let n = Number(prompt("Enter a number"));
+for (let i = n; i <= n * 10; i += n) {
+    console.log(i);
+}

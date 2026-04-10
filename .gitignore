@@ -1,2 +1,5 @@
+.env
+.env.*
+!.env.example
 this is something will not be pushed into git hub where when we run git add. in terminal all files are added but the file named git.ignore will be kept private in git hub.
 This is how .env file conflit can be treated.

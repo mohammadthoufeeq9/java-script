@@ -136,3 +136,19 @@ for(let i=1; i<=3;i++){
 //here in git ignore file named .gitgnore is untracked.
 //file inside the ignore are untracked 
 //to make them racked we use ! here when git add . file named with !filename will be tracked
+
+//while loop
+let i=1
+while (i<=5){
+    console.log(i);
+    i++
+}
+//game with while loop
+const fav_movie="Spider Man"
+let guess=prompt("Guess my favorite movie");
+while((guess!=fav_movie) && (guess!='guit')){
+    guess=prompt("wrong..try again!!");
+}
+if (guess===fav_movie){
+    console.log("congrats..")
+}

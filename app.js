@@ -152,3 +152,22 @@ while((guess!=fav_movie) && (guess!='guit')){
 if (guess===fav_movie){
     console.log("congrats..")
 }
+//loops with arrays
+let arr=["apple","ball","cat","dog","egg","fish",'hen']
+for(let i=0;i=arr.length;i++){
+    console.log(i,arr[i]);
+}
+let animals = [
+    ["cat", "dog"],
+    ["lion", "tiger"],
+    ["eagle", "sparrow"]
+];
+
+console.log(animals[0][1]); // dog
+console.log(animals[2][0]); // eagle
+// for of collections
+let fruits = ["apple", "Banana", "cherry", "Dragon fruit"];
+
+for (fruit of fruits) {
+    console.log(fruit);
+}

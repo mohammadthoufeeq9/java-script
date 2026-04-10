@@ -133,3 +133,6 @@ for(let i=1; i<=3;i++){
         console.log(j)
     }
 }
+//here in git ignore file named .gitgnore is untracked.
+//file inside the ignore are untracked 
+//to make them racked we use ! here when git add . file named with !filename will be tracked

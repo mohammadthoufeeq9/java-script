@@ -110,6 +110,6 @@ console.log(follower.concat(array))
 console.log(follower.reverse())
 //qs
 //loops
-for(i=1;i<=15;i+2){
+for (let i = 1; i <= 15; i += 2) {
     console.log(i)
 }

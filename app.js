@@ -185,3 +185,33 @@ const post={
     reposts:55003,
     tags:8573
 }
+//in js if number is given as key then js automatically converts it to string
+const obj={
+    1:"w",
+    2:"h",
+    null:"hd"
+}//here if obj[1] it will consider 1 as string not as the index
+//add new key value
+obj.cost=20;
+//object of object (nested objests)
+const socialInfo={
+    Iqbal:{
+        id:"@ias",
+        follower:900990,
+        following:2832,
+        posts:537,
+        bio:"ntg",
+    },Riyaz:{
+        id:"@riyaz",
+        followers:8787298,
+        followings:737,
+        post:83,
+        bio:"papa ka magar mach"
+    },Frahan:{
+        id:undefined,
+        followers:null,
+        followings:null,
+        post:null,
+        bio:"empty(new id)"
+    }
+}

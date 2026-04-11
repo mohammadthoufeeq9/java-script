@@ -215,3 +215,38 @@ const socialInfo={
         bio:"empty(new id)"
     }
 }
+//Array of objects
+const arrayobj = [{
+    Iqbal: {
+        id: "@ias",
+        followers: 900990,
+        followings: 2832,
+        posts: 537,
+        bio: "ntg",
+    },
+    Riyaz: {
+        id: "@riyaz",
+        followers: 8787298,
+        followings: 737,
+        posts: 83,
+        bio: "papa ka magar mach",
+    },
+    Frahan: {
+        id: null, // or a placeholder string
+        followers: null,
+        followings: null,
+        posts: null,
+        bio: "empty(new id)",
+    }
+}];
+//to access
+arrayobj[1].id;//here @riyaz is accessed
+//maths
+//Method,Purpose,Example,Output
+//Math.abs(x),Returns the absolute (positive) value of x,Math.abs(-10),10
+//"Math.pow(x,y)",Raises x to the power of y,"Math.pow(2,3)",8
+//Math.floor(x),Rounds x down to (nearest smallest integer),Math.floor(4.9),4
+//Math.ceil(x),Rounds x up to (nearest larger integer),Math.ceil(4.1),5-----ceiling
+//Math.random(),Returns a random number between 0 and 1,Math.random(),e.g. 0.374
+//random
+Math.floor(Math.random()*10)+1;//+1 because the number will not print the last number i.e 10

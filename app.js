@@ -171,3 +171,17 @@ let fruits = ["apple", "Banana", "cherry", "Dragon fruit"];
 for (fruit of fruits) {
     console.log(fruit);
 }
+//object leterals
+//are used to store keyed value pair and complex entries
+const student={
+    Name:"Thoufeeq",
+    age:21,
+    blood_grp:"O+"
+}
+const post={
+    username:"FuryToxic",
+    content:"save india from corrupted leaders",
+    likes:172791,
+    reposts:55003,
+    tags:8573
+}

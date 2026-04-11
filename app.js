@@ -146,15 +146,15 @@ while (i<=5){
 //game with while loop
 const fav_movie="Spider Man"
 let guess=prompt("Guess my favorite movie");
-while((guess!=fav_movie) && (guess!='guit')){
+while((guess.toLocaleLowerCase()!=fav_movie.toLowerCase()) && (guess.toLowerCase()!='quit')){
     guess=prompt("wrong..try again!!");
 }
-if (guess===fav_movie){
+if (guess.toLowerCase()===fav_movie.toLowerCase()){
     console.log("congrats..")
 }
 //loops with arrays
 let arr=["apple","ball","cat","dog","egg","fish",'hen']
-for(let i=0;i=arr.length;i++){
+for(let i=0;i<arr.length;i++){
     console.log(i,arr[i]);
 }
 let animals = [

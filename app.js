@@ -250,3 +250,16 @@ arrayobj[1].id;//here @riyaz is accessed
 //Math.random(),Returns a random number between 0 and 1,Math.random(),e.g. 0.374
 //random
 Math.floor(Math.random()*10)+1;//+1 because the number will not print the last number i.e 10
+//function
+function nameOfFunction(){
+    console.log("hello, This is how function usedd in js");
+}
+nameOfFunction()
+function isAdult(){
+    if(age==18){
+        console.log("You are adult");
+    }else{
+        console.log("You are not an adult yet");
+    }
+}
+isAdult()

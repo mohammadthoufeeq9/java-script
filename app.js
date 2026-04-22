@@ -336,3 +336,16 @@ checkodd(2);
 let checkeven=oddeven("even");
 checkeven(2);
 checkeven(43);
+//methods-Actions can be performed on objects
+const calculator={
+    add: function(a,b){
+        return a+b
+    },  
+    sub: function(a,b){
+        return a-b
+    },
+    div: function(a,b){
+        return a/b
+    }
+}
+calculator.add(2,5)//7

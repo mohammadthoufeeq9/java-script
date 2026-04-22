@@ -280,3 +280,11 @@ function addition(x,y){
     return x+y
 }
 console.log(addition(2,4));
+function getsum(n){
+    let sum=0
+    for(i=0;i<=n;i++){
+        sum+=i;
+    }
+    return sum
+}
+console.log(getsum(5))

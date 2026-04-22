@@ -288,3 +288,14 @@ function getsum(n){
     return sum
 }
 console.log(getsum(5))
+//scope
+let greet="hello";//global variable/scope
+function changegreet(){
+    let greet="Hello Bro"; // function scope
+    console.log(greet)
+    function Innergreet(){
+        console.log(greet) //lexical scope, if called function scope is printed
+    }
+}
+console.log(greet);
+console.log(changegreet());

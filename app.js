@@ -275,4 +275,8 @@ function iseven(number){
         return false
     }
 }
-console.log(iseven(23));
+console.log(iseven(23));//with arguments.........
+function addition(x,y){
+    return x+y
+}
+console.log(addition(2,4));

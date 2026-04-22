@@ -299,3 +299,40 @@ function changegreet(){
 }
 console.log(greet);
 console.log(changegreet());
+//function expression where known as nameless function but the function  is decleared in an variable
+let sum=function(a,b){
+    return a+b
+}
+console.log(sum(1,2));
+//higer order function where argument is taken as a function
+function cal(func, n, a, b) {
+    for (let i = 1; i <= n; i++) {
+        console.log(func(a, b));
+    }
+}
+
+let sum = function(a, b) {
+    return a + b;
+}
+
+cal(sum, 4, 1, 2);
+// Output: 3, 3, 3, 3
+function oddeven(req){
+    if(req=="odd"){
+        return function(n){
+            console.log(!(n%2===0));
+        }
+    }else if(req=="even"){
+        return function(n){
+            console.log(n%2===0);
+        }
+    }else{
+        console.log("wrong req")
+    }
+}
+let checkodd=oddeven("odd");
+checkodd(3);
+checkodd(2);
+let checkeven=oddeven("even");
+checkeven(2);
+checkeven(43);

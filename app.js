@@ -268,3 +268,11 @@ function rollDice(){
     console.log(dice)
 }
 rollDice();
+function iseven(number){
+    if(number % 2===0){
+        return true
+    }else{
+        return false
+    }
+}
+console.log(iseven(23));

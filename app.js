@@ -311,7 +311,7 @@ function cal(func, n, a, b) {
     }
 }
 
-let sum = function(a, b) {
+let sum= function(a, b) {
     return a + b;
 }
 
@@ -349,3 +349,16 @@ const calculator={
     }
 }
 calculator.add(2,5)//7
+//this in js
+//this keyword refers to the object that is executing in current piece of code
+const marks ={
+    name:"Aishu",
+    eng:98,
+    phy:99,
+    mat:99,
+    getavg(){
+        let avg=(this.eng+this.phy+this.mat)/3;
+        console.log(`${this.name} got avg of ${avg}`);
+    }
+}
+marks.getavg();

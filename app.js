@@ -410,7 +410,7 @@ const person = {
 //Normal functions get their own this depending on how they’re called.
 person.greet(); // "Hello, my name is Aishu"
 
-
+name=Thoufeeq;
 const person1 = {
     name: "Aishu",
     greet: () => {
@@ -426,3 +426,14 @@ person1.greet(); // "Hello, my name is undefined"
 //NORMAL FUNCTION() Use normal functions for object methods when you need this to refer to the object.
 
 //ARROW FUNCTION=>Use arrow functions for short callbacks or when you want to inherit this from the surrounding scope.
+//to solve undefined in arrow we can do 
+const p1={
+    name:"Thoufeeq",
+    greet:function(){
+        const sayhello=() =>{
+            console.log("My name is " +this.name)
+        }
+        sayhello()
+    }
+}
+p1.greet();//My name is Thoufeeq

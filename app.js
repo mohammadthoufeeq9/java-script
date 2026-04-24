@@ -437,3 +437,20 @@ const p1={
     }
 }
 p1.greet();//My name is Thoufeeq
+
+//question 1
+const sq=(n) =>{
+    console.log(n**n);
+}
+sq(2)
+//question 2
+const qs2=() =>{
+    let td= setInterval(() =>{
+        console.log("Yo! How you doing?")
+    },2000)
+    setTimeout(() => {
+        clearInterval(td)
+        console.log("SO ITS A GOOD BYE THEN SEE YOU! HOPE DESTINY LET US MEET AGAIN :( UNTIL THEN- SAYONAARA")
+    },10000);
+}
+qs2()

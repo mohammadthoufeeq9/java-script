@@ -362,3 +362,9 @@ const marks ={
     }
 }
 marks.getavg();
+//try & catch,Anything outside the try...catch is not protected. If you want to handle errors gracefully, put the risky code inside the try.
+try{
+    console.log(a);
+}catch{//can use catch(err) and then print err
+    console.log("a is not defined,so this will print and moves to next line of code to execute");
+}

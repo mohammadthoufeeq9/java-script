@@ -300,10 +300,10 @@ function changegreet(){
 console.log(greet);
 console.log(changegreet());
 //function expression where known as nameless function but the function  is decleared in an variable
-let sum=function(a,b){
+let sum1=function(a,b){
     return a+b
 }
-console.log(sum(1,2));
+console.log(sum1(1,2));
 //higer order function where argument is taken as a function
 function cal(func, n, a, b) {
     for (let i = 1; i <= n; i++) {
@@ -400,3 +400,29 @@ setTimeout(() => {
     clearInterval(name);
     console.log("ok You dont like seeing me again lets stop that loop 'long time no see' :( ")
 }, 10000);
+//this acts as differently in normal function and arrow fun
+const person = {
+    name: "Aishu",
+    greet: function() {
+        console.log("Hello, my name is " + this.name);
+    }
+};
+//Normal functions get their own this depending on how they’re called.
+person.greet(); // "Hello, my name is Aishu"
+
+
+const person1 = {
+    name: "Aishu",
+    greet: () => {
+        console.log("Hello, my name is " + this.name);
+    }
+};
+//Arrow functions do not bind their own this.
+
+//Instead, they inherit this from the surrounding scope (the outer context).
+
+//In this case, the outer scope is not the person object, so this.name is undefined.
+person1.greet(); // "Hello, my name is undefined"
+//NORMAL FUNCTION() Use normal functions for object methods when you need this to refer to the object.
+
+//ARROW FUNCTION=>Use arrow functions for short callbacks or when you want to inherit this from the surrounding scope.

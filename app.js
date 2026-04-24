@@ -368,3 +368,8 @@ try{
 }catch{//can use catch(err) and then print err
     console.log("a is not defined,so this will print and moves to next line of code to execute");
 }
+//Arrow function is compact version of functions where it use less line of code and can be callback with asssigned variable name
+const div=(a,b)=>{
+    console.log(a/b);
+}
+div(10,5)//op 2

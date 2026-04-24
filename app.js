@@ -373,3 +373,30 @@ const div=(a,b)=>{
     console.log(a/b);
 }
 div(10,5)//op 2
+const cube=(n)=>{
+    return n*n*n;
+}
+cube(3);
+const power=(a,b)=>{
+    return a**b;
+}
+power(2,4);
+const sub=(a,b)=>(a-b);//When the function body is a single expression wrapped in parentheses, JavaScript automatically returns that value without needing the return keyword.
+console.log(sub(10, 4)); // prints 6
+//set timeout function,setTimeout is a built‑in JavaScript function used to schedule code to run after a certain delay (measured in milliseconds)
+setTimeout((a,b)=>{
+    console.log(`the sum of a and b is ${a+b}`)
+},5000,20,30);//argument is given after time like,5000,a,b
+console.log("This will execute before  the time and then after 5s sum will be executed");//1 sec = 1000ms
+//setinterval
+setInterval(() => {
+    console.log("Hey,longtime no see")
+},2000);//runs repeatedly after each delay until you stop it.It can run infinite times 
+//to stop this we use clearinterval(id)
+let name= setInterval(() => {
+    console.log("Long time no see")
+}, 2000);
+setTimeout(() => {
+    clearInterval(name);
+    console.log("ok You dont like seeing me again lets stop that loop 'long time no see' :( ")
+}, 10000);

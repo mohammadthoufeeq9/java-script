@@ -475,3 +475,26 @@ arr.forEach((bros)=>{
 //Iqbal
 //Riyaz
 //saif
+
+//MAP in arr
+let num=[1,2,3,4,5]//map() is a JavaScript array method that makes a new array by applying a function to each element of the original array. It does not change the original array.
+let double=num.map((el)=>{
+    return el*2;
+})
+console.log(double)//op=>[2,4,6,8,10]
+//Filter in arr, filter() is an array method that creates a new array containing only the elements that pass a certain test (the condition you give)
+let arr=[2,1,3,5,2,1,5,8,9,10,20,1,3]
+let ans=arr.filter((el)=>{
+    return el % 2==0;
+})
+console.log(ans)
+//every in arr=> returns true if every element is true or else false
+let every1=arr.every((el)=>{
+    el%2==0;//agar ek false then entire arr false
+})
+console.log(every1)//false
+//some in arr same as every but acts as OR
+let arr2=arr.some((el)=>{
+    el%2==0;
+})
+console.log(arr2)

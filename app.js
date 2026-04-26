@@ -38,7 +38,7 @@ console.log(year)
 //     case "default":
 //         console.log("The light is broken")
 // }
-let day=22;
+let day=5;
 switch(day){
     case 1:
         console.log("Monday");
@@ -69,7 +69,7 @@ switch(day){
 console.error("wrong Password!")
 console.warn("Enter correct password")
 // prompt("enter name")
-
+//it allows the user to give the input
 // let f_name= prompt("Enter your first name");
 // let l_name= prompt("Enter your last name");
 // console.log(f_name,"",l_name);
@@ -410,13 +410,13 @@ const person = {
 //Normal functions get their own this depending on how they’re called.
 person.greet(); // "Hello, my name is Aishu"
 
-name=Thoufeeq;
+name="Thoufeeq";
 const person1 = {
     name: "Aishu",
     greet: () => {
         console.log("Hello, my name is " + this.name);
     }
-};
+};//Hello, my name is undefined
 //Arrow functions do not bind their own this.
 
 //Instead, they inherit this from the surrounding scope (the outer context).
@@ -454,3 +454,24 @@ const qs2=() =>{
     },10000);
 }
 qs2()
+//ARRAYS forEach
+let arr=["Thoufeeq","Iqbal","Riyaz","Saif","Farhan","SaifXduker"]
+arr.forEach((item,index)=>{
+    console.log(index,item);
+});
+//for each in obj
+let arr=[{
+    name:"Iqbal",
+    Id:"iqbal.123"
+},{name:"Riyaz",
+    Id:"Marco.123"
+},{
+    name:"saif",
+    Id:"saif.123"
+}]
+arr.forEach((bros)=>{
+    console.log(bros.name)
+})
+//Iqbal
+//Riyaz
+//saif
